@@ -1,0 +1,20 @@
+
+#outputGrade1Short, #outputGrade2Short, #outputGrade3Short {
+    font-weight: bold; line-height: 1.3;
+}
+
+#outputGrade1Short, #outputGrade2Short {
+    font-size: 1.75em;
+}
+
+#outputGrade3Short {
+    font-size: 2.75em;
+}
+
+#outputGrade1Short, .outputGrade1Short { color: #09c; }
+#outputGrade2Short, .outputGrade2Short { color: #f90; }
+#outputGrade3Short, .outputGrade3Short { color: #0c0; }
+
+.tiny {
+    font-size: .6em;
+}
