@@ -30,9 +30,9 @@ function updateGrades() {
     // set calculation variant
     let result = '';
     if (calc.variant == 1) // variant 1
-        result = '(2 × <span class="outputGrade1Short">' + calc.gradeSchriftlicheArbeit.valueShortAsString + '</span> + <span class="outputGrade2Short">' + calc.gradeVerteidigung.valueShortAsString + '</span>) / 3 = ' + calc.gradeAbschlussarbeit.valueAsString;
+        result = '(2 × <span class="outputGrade1Short">' + calc.gradeSchriftlicheArbeit.valueShortAsString + '</span> + <span class="outputGrade2Short">' + calc.gradeVerteidigung.valueShortAsString + '</span>) : 3 = ' + calc.gradeAbschlussarbeit.valueAsString;
     else if (calc.variant == 2) // variant 2
-        result = '(3 × <span class="outputGrade1Short">' + calc.gradeSchriftlicheArbeit.valueShortAsString + '</span> + <span class="outputGrade2Short">' + calc.gradeVerteidigung.valueShortAsString + '</span>) / 4 = ' + calc.gradeAbschlussarbeit.valueAsString;
+        result = '(3 × <span class="outputGrade1Short">' + calc.gradeSchriftlicheArbeit.valueShortAsString + '</span> + <span class="outputGrade2Short">' + calc.gradeVerteidigung.valueShortAsString + '</span>) : 4 = ' + calc.gradeAbschlussarbeit.valueAsString;
     document.getElementById('outputGrade3Calc').innerHTML = result;
 }
 
