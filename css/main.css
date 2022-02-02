@@ -1,3 +1,9 @@
+.fixNotch {
+	padding: env(safe-area-inset-top)
+			 env(safe-area-inset-right)
+			 env(safe-area-inset-bottom)
+			 env(safe-area-inset-left);
+}
 
 #outputGrade1Short, #outputGrade2Short, #outputGrade3Short {
     font-weight: bold; line-height: 1.3;
