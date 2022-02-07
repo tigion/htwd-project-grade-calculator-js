@@ -2,7 +2,7 @@
 
 Webanwendung zur Berechnung der Bewertung von Abschlussarbeiten. Optimiert für mobile Geräte.
 
-- Als GitHub Page probieren: https://tigion.github.io/webapp-pyramid-of-numbers/
+- Als GitHub Page probieren: https://tigion.github.io/htw-webapp-grade-calculator/
 
 <img src="https://github.com/tigion/htw-webapp-grade-calculator/blob/main/README-screenshot.png" alt="Screenshot" width="400"/>
 
