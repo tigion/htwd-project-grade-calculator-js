@@ -27,7 +27,9 @@
 
         <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
     </head>
-    <body class="d-flex flex-column h-100 bg-white limitMaxWidth">
+    <body class="d-flex flex-column h-100 limitMaxWidth">
+
+        <!-- header + nav -->
         <nav class="navbar sticky-top navbar-light bg-light border-bottom shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Bewertung Abschlussarbeit</a>
@@ -41,7 +43,9 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid text-center pt-4 pb-2 bg-white">
+
+        <!-- content -->
+        <div class="container-fluid flex-grow-1 text-center pt-4 pb-2 bg-white">
             <div class="row"><div class="col"><h3 class="fw-normal text-black text-opacity-25">Schriftliche Arbeit</h3></div></div>
             <div class="row">
                 <div class="col">
@@ -127,7 +131,9 @@
                 </div>
             </div>
         </div>
-        <div class="footer container-fluid mt-auto py-1 border-top bg-light">
+
+        <!-- footer -->
+        <footer class="container-fluid mt-auto py-1 border-top bg-light">
             <div class="row">
                 <div class="col">
                     <form class="form-floating mt-2">
@@ -139,10 +145,12 @@
                     </form>
                 </div>
             </div>
-            <footer class="text-center mt-2 text-body text-opacity-50">
-                <span class="tiny">Notenrechner auf <a class="text-reset" href="https://github.com/tigion/htw-webapp-grade-calculator">GitHub</a></span>
-            </footer>
-        </div>
+            <div class="row text-center mt-2 text-body text-opacity-50">
+                <div class="col">
+                    <span class="tiny">Notenrechner auf <a class="text-reset" href="https://github.com/tigion/htw-webapp-grade-calculator">GitHub</a></span>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/Grade.js"></script>
         <script src="js/Calculation.js"></script>
