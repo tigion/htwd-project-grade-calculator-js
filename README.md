@@ -1,26 +1,25 @@
 # Notenrechner
 
-Webanwendung zur Berechnung der Bewertung von Abschlussarbeiten. Optimiert für mobile Geräte.
+Web application for calculating the assessment of final theses. Optimized for mobile devices.
 
-- Als GitHub Page probieren: https://tigion.github.io/htw-webapp-grade-calculator/
+- Try it as a GitHub page: https://tigion.github.io/htwd-project-grade-calculator/
 
-![Screenshot im Webbrwoser](README-screenshot.png)
+![Screenshot in the webbrowser](README-screenshot.png)
 
-## Hinweise
+## Notes
 
-Die Berechnung erfolgt ganzzahlig, mit drei Nachkommastellen, in den JavaScript Klassen `Calculation` und `Grade`. Die Oberfläche ist mit HTML/CSS und Bootstrap (CSS) umgesetzt.
+The calculation is performed as an integer, with three decimal places, in the JavaScript classes `Calculation` and `Grade`. The interface is implemented with HTML/CSS and Bootstrap (CSS).
 
-### Berechnung
+### Calculation
 
-| (Teil)Note | Berechnung |
-| ---- | ---------- |
+| Partial Grade       |  Calculation                        |
+| ------------------- | ----------------------------------- |
 | Schriftliche Arbeit | `(1. Gutachten + 2. Gutachten) / 2` |
-| Verteidigung | `(Vortrag + Diskussion) / 2` |
+|  Verteidigung       |  `(Vortrag + Diskussion) / 2`       |
 
-| Gesamtnote | Berechnung |
-| ---- | ---------- |
-| Informatik/Mathematik<br />(2/3 + 1/3) | `(2x Schriftliche Arbeit + Verteidigung) / 3` |
-| Wirtschaftswissenschaften<br />(3/4 + 1/4) | `(3x Schriftliche Arbeit + Verteidigung) / 4` |
+| Final Grade                                |  Calculation                                   |
+| ------------------------------------------ | ---------------------------------------------- |
+|  Informatik/Mathematik<br />(2/3 + 1/3)    | `(2x Schriftliche Arbeit + Verteidigung) / 3`  |
+| Wirtschaftswissenschaften<br />(3/4 + 1/4) | `(3x Schriftliche Arbeit + Verteidigung) / 4`  |
 
-- Bei den Teilnoten für die **Schriftliche Arbeit**, der **Verteidigung** und der **Gesamtnoten** für die Bewertung der Abschlussarbeit wird für das Ergebnis alles nach der ersten Nachkommastelle abgeschnitten.
-- Zur Kontrolle steht das unbeschnittene Ergebnis unter der jeweiligen Note.
+- For the partial grades (**Schriftliche Arbeit**, **Verteidigung** and **Gesamtnoten**), everything after the first decimal place is cut off in the result. The uncut result is displayed below the grades for control purposes.
