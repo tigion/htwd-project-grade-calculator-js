@@ -1,25 +1,31 @@
 # Notenrechner
 
-Web application for calculating the assessment of final theses. Optimized for mobile devices.
+Web application for calculating the assessment of final theses.
+Optimized for mobile devices.
 
-- Try it as a GitHub page: https://tigion.github.io/htwd-project-grade-calculator/
+- Try it as a GitHub page:
+  [Context: https://tigion.github.io/htwd-project-grade-calculator/]
 
 ![Screenshot in the webbrowser](README-screenshot.png)
 
 ## Notes
 
-The calculation is performed as an integer, with three decimal places, in the JavaScript classes `Calculation` and `Grade`. The interface is implemented with HTML/CSS and Bootstrap (CSS).
+The calculation is performed as an integer, with three decimal places, in the
+JavaScript classes `Calculation` and `Grade`.
+The interface is implemented with HTML/CSS and Bootstrap (CSS).
 
 ### Calculation
 
 | Partial Grade       |  Calculation                        |
 | ------------------- | ----------------------------------- |
 | Schriftliche Arbeit | `(1. Gutachten + 2. Gutachten) / 2` |
-|  Verteidigung       |  `(Vortrag + Diskussion) / 2`       |
+| Verteidigung        | `(Vortrag + Diskussion) / 2`        |
 
 | Final Grade                                |  Calculation                                   |
 | ------------------------------------------ | ---------------------------------------------- |
-|  Informatik/Mathematik<br />(2/3 + 1/3)    | `(2x Schriftliche Arbeit + Verteidigung) / 3`  |
+| Informatik/Mathematik<br />(2/3 + 1/3)     | `(2x Schriftliche Arbeit + Verteidigung) / 3`  |
 | Wirtschaftswissenschaften<br />(3/4 + 1/4) | `(3x Schriftliche Arbeit + Verteidigung) / 4`  |
 
-- For the partial grades (**Schriftliche Arbeit**, **Verteidigung** and **Gesamtnoten**), everything after the first decimal place is cut off in the result. The uncut result is displayed below the grades for control purposes.
+- For the partial grades (**Schriftliche Arbeit**, **Verteidigung** and
+  **Gesamtnoten**), everything after the first decimal place is cut off in the
+  result. The uncut result is displayed below the grades for control purposes.
