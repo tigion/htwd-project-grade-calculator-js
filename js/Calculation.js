@@ -1,4 +1,6 @@
-class Calculation {
+import { Grade } from "./Grade.js";
+
+export class Calculation {
   constructor() {
     this.gradeGutachten1 = new Grade();
     this.gradeGutachten2 = new Grade();

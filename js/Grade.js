@@ -1,4 +1,4 @@
-class Grade {
+export class Grade {
   static precisionDigits = 3;
   static precisionFactor = Math.pow(10, Grade.precisionDigits);
   static decimalSeparator = ",";

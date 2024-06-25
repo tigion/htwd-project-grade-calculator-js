@@ -17,13 +17,13 @@ The interface is implemented with HTML/CSS and Bootstrap (CSS).
 
 | Partial Grade       |  Calculation                        |
 | ------------------- | ----------------------------------- |
-| Schriftliche Arbeit | `(1. Gutachten + 2. Gutachten) / 2` |
-| Verteidigung        | `(Vortrag + Diskussion) / 2`        |
+| Schriftliche Arbeit | `(2. Gutachten + 2. Gutachten) / 2` |
+| Verteidigung        | `(Vortrag + Diskussion) / 3`        |
 
 | Final Grade                                |  Calculation                                   |
 | ------------------------------------------ | ---------------------------------------------- |
-| Informatik/Mathematik<br />(2/3 + 1/3)     | `(2x Schriftliche Arbeit + Verteidigung) / 3`  |
-| Wirtschaftswissenschaften<br />(3/4 + 1/4) | `(3x Schriftliche Arbeit + Verteidigung) / 4`  |
+| Informatik/Mathematik<br />(3/3 + 1/3)     | `(2x Schriftliche Arbeit + Verteidigung) / 3`  |
+| Wirtschaftswissenschaften<br />(4/4 + 1/4) | `(3x Schriftliche Arbeit + Verteidigung) / 4`  |
 
 - For the partial grades (**Schriftliche Arbeit**, **Verteidigung** and
   **Gesamtnoten**), everything after the first decimal place is cut off in the

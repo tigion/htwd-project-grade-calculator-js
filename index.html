@@ -44,11 +44,11 @@
         <a class="navbar-brand" href="#">Bewertung Abschlussarbeit</a>
         <div class="d-flex">
           <a
+            id="resetInputs"
             class="nav-link p-1"
             aria-current="page"
             href="#"
             title="Noten zurücksetzen"
-            onclick="setDefaultSettings()"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,6 @@
             id="inputGrade1-1"
             class="form-select"
             aria-label="Note Erstgutachten"
-            onchange="updateGrades()"
           >
             <option value="1.0">1,0</option>
             <option value="1.3">1,3</option>
@@ -112,7 +111,6 @@
             id="inputGrade1-2"
             class="form-select"
             aria-label="Note Zweitgutachten"
-            onchange="updateGrades()"
           >
             <option value="1.0">1,0</option>
             <option value="1.3">1,3</option>
@@ -150,7 +148,6 @@
             id="inputGrade2-1"
             class="form-select"
             aria-label="NOte des Vortrages"
-            onchange="updateGrades()"
           >
             <option value="1.0">1,0</option>
             <option value="1.3">1,3</option>
@@ -171,7 +168,6 @@
             id="inputGrade2-2"
             class="form-select"
             aria-label="Note der Diskussion"
-            onchange="updateGrades()"
           >
             <option value="1.0">1,0</option>
             <option value="1.3">1,3</option>
@@ -229,7 +225,6 @@
               id="inputVariant"
               class="form-select"
               aria-label="Berechnungsvariante"
-              onchange="updateGrades()"
             >
               <option value="1">Informatik/Mathematik (2/3 + 1/3)</option>
               <option value="2">Wirtschaftswissenschaften (3/4 + 1/4)</option>
@@ -254,8 +249,6 @@
       </div>
     </footer>
 
-    <script src="js/Grade.js"></script>
-    <script src="js/Calculation.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

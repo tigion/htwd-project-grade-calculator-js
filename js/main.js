@@ -1,3 +1,5 @@
+import { Calculation } from "./Calculation.js";
+
 function setDefaultSettings() {
   document.getElementById("inputGrade1-1").value = 1.3;
   document.getElementById("inputGrade1-2").value = 1.3;
@@ -57,8 +59,19 @@ function updateGrades() {
 
 function init() {
   setDefaultSettings();
-  updateGrades();
 }
+
+/* Add event listener (from module scope) */
+
+// Input reset button/link
+document
+  .getElementById("resetInputs")
+  .addEventListener("click", setDefaultSettings);
+
+// Grade and variant selects
+document.querySelectorAll("select").forEach((select) => {
+  select.addEventListener("change", updateGrades);
+});
 
 /* main */
 
