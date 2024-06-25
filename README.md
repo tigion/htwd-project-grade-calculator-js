@@ -3,8 +3,7 @@
 Web application for calculating the assessment of final theses.
 Optimized for mobile devices.
 
-- Try it as a GitHub page:
-  [Context: https://tigion.github.io/htwd-project-grade-calculator/]
+- Try it as a [GitHub Page](https://tigion.github.io/htwd-project-grade-calculator/)
 
 ![Screenshot in the webbrowser](README-screenshot.png)
 
