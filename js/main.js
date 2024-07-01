@@ -22,17 +22,17 @@ function updateGrades() {
 
   // set output grades
   document.getElementById("outputGrade1Short").innerText =
-    calc.gradeSchriftlicheArbeit.valueShortAsString;
+    calc.gradeWrittenThesis.valueShortAsString;
   document.getElementById("outputGrade1").innerText =
-    calc.gradeSchriftlicheArbeit.valueAsString;
+    calc.gradeWrittenThesis.valueAsString;
   document.getElementById("outputGrade2Short").innerText =
-    calc.gradeVerteidigung.valueShortAsString;
+    calc.gradeDefense.valueShortAsString;
   document.getElementById("outputGrade2").innerText =
-    calc.gradeVerteidigung.valueAsString;
+    calc.gradeDefense.valueAsString;
   document.getElementById("outputGrade3Short").innerText =
-    calc.gradeAbschlussarbeit.valueShortAsString;
+    calc.gradeThesis.valueShortAsString;
   document.getElementById("outputGrade3Text").innerText =
-    '"' + calc.gradeAbschlussarbeitAsText + '"';
+    '"' + calc.gradeThesisAsText + '"';
 
   // set calculation variant
   let result = "";
@@ -40,20 +40,20 @@ function updateGrades() {
     // variant 1
     result =
       '(2 × <span class="outputGrade1Short">' +
-      calc.gradeSchriftlicheArbeit.valueShortAsString +
+      calc.gradeWrittenThesis.valueShortAsString +
       '</span> + <span class="outputGrade2Short">' +
-      calc.gradeVerteidigung.valueShortAsString +
+      calc.gradeDefense.valueShortAsString +
       "</span>) : 3 = " +
-      calc.gradeAbschlussarbeit.valueAsString;
+      calc.gradeThesis.valueAsString;
   else if (calc.variant == 2)
     // variant 2
     result =
       '(3 × <span class="outputGrade1Short">' +
-      calc.gradeSchriftlicheArbeit.valueShortAsString +
+      calc.gradeWrittenThesis.valueShortAsString +
       '</span> + <span class="outputGrade2Short">' +
-      calc.gradeVerteidigung.valueShortAsString +
+      calc.gradeDefense.valueShortAsString +
       "</span>) : 4 = " +
-      calc.gradeAbschlussarbeit.valueAsString;
+      calc.gradeThesis.valueAsString;
   document.getElementById("outputGrade3Calc").innerHTML = result;
 }
 
